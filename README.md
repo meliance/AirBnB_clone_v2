@@ -21,17 +21,6 @@ This repository contains the initial stage of a student project to build a clone
 | 10. Console 1.0 | [console.py](https://github.com/justinmajetich/AirBnB_clone/blob/dev/console.py) [/models/engine/file_storage.py](https://github.com/justinmajetich/AirBnB_clone/blob/dev/models/engine/file_storage.py) | Update the console and file storage system to work dynamically with all  classes update file storage |
 <br>
 <br>
-<center> <h2>General Use</h2> </center>
-
-1. First clone this repository.
-
-3. Once the repository is cloned locate the "console.py" file and run it as follows:
-```
-/AirBnB_clone$ ./console.py
-```
-4. When this command is run the following prompt should appear:
-```
-(hbnb)
 ```
 5. This prompt designates you are in the "HBnB" console. There are a variety of commands available within the console program.
 
