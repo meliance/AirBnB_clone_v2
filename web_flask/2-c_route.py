@@ -3,27 +3,25 @@
 
 from flask import Flask
 
-
 app = Flask(__name__)
-app.url_map.strict_slashes = False
 
-
-@app.route('/')
+@app.route('/', strict_slashes=False)
 def hello_world():
-    """ Returns some text. """
+    """ Returns some text for the root route """
     return 'Hello HBNB!'
 
-
-@app.route('/hbnb')
+@app.route('/hbnb', strict_slashes=False)
 def hello():
-    """ Return other text. """
+    """ Returns some text for the /hbnb route """
     return 'HBNB'
 
-@app.route('/c/<text>')
+@app.route('/c/<text>', strict_slashes=False)
 def c_text(text):
-    """ replace text with variable. """
+    """ Returns 'C ' followed by the value of the text variable with underscores replaced by spaces """
     text = text.replace('_', ' ')
     return 'C {}'.format(text)
 
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
